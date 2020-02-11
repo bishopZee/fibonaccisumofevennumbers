@@ -1,0 +1,22 @@
+<?php
+    $evensum = 0;
+    $num1=0;
+    $num2=1;
+   
+      do {
+		       // echo $counter;
+		         $num3 = $num2+$num1;
+	           $num1=$num2;
+             $num2=$num3;
+		         //$counter=true;
+		         //echo $num3
+		         if ($num3%2==0){ // checking if the number is even
+                     $evensum+=$num3; //if the number is even it will be summed up to the other numbers
+			               //echo $num3 . "</br>"; //checking if fibonacci sequence is being printed
+			               echo $evensum . "</br>"; // printing the current sum of numbers
+			               }
+	             }
+		  while($evensum<5000000); //this will test if the sum is above 5million
+		  
+		  echo $evensum . "</br>";
+			?>
